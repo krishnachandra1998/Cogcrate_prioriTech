@@ -1,0 +1,56 @@
+
+/* ================================= Activity 3 ==========================================*/
+
+#activity_3_con{
+    width: 33%;
+}
+
+
+.food-container {
+  min-height: 250px;
+}
+
+#bad-food{
+  background-image: url('http://localhost/Cogcrate_Prioritech/public/assets/img/activity_3_img/section_1_bg.png');
+  background-repeat:no-repeat;
+  background-size: 140px 250px;
+  background-position: center;
+}
+
+#good-food{
+  background-image: url('http://localhost/Cogcrate_Prioritech/public/assets/img/activity_3_img/section_2_bg.png');
+  background-repeat:no-repeat;
+  background-size: 140px 250px;
+  background-position: center; 
+}
+
+.food {
+  margin: 5px;
+  padding: 4px;
+  background:rgb(0,0,0,0.1);
+  cursor: pointer;
+  text-align: center;
+  border: 2px dashed orangered;
+}
+
+.food > img {
+width: 40px;
+height: 40px;
+}
+
+.foods{
+  border:2px solid black; 
+  height: 205px;
+}
+.dragged{
+  margin: 3px;
+  padding: 3px;
+  background-color: rgb(255, 255, 255, 0.7);
+  width: 80px;
+  display: inline-block;
+}
+
+.dragged > img {
+  width: 35px;
+  height: 35px;
+}

@@ -1,0 +1,28 @@
+
+/* =============================== Activity 15 ===========================================*/
+#activity_15_con{
+  width: 50%;
+}
+
+#sortable-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#sortable-list li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: grab;
+}
+
+.list_numbers_img{
+  height: 105px;
+  width: 105px;
+}
+
+.checkOrder{
+  margin: 0px 30px;
+}

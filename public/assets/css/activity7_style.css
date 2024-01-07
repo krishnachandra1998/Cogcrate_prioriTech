@@ -1,0 +1,78 @@
+
+/*----------------------Activity 7 ----------------------------------*/
+
+#activity_7_con{
+    width: 35%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nested-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border: 3px solid black;
+}
+
+.droppable-number {
+  height: 82px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+
+.droppable-number span {
+  pointer-events: none; /* The element is never the target of pointer events */
+}
+
+.droppable-number img{
+  height: 48px;
+  width: 48px;
+}
+
+.draggable-number {
+  height: 70px;
+  width: 70px;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable-number:hover {
+  opacity: 0.5;
+}
+
+
+/* Drag and Drop Related Styling */
+
+.droppable-number.droppable-hover {
+  transform: scale(1.1);
+}
+.droppable-number.dropped {
+  color: #fff;
+  padding-bottom: 0px;
+}
+
+.droppable-number.dropped span {
+  display: none;
+}
+
+.droppable-number.dropped img {
+  pointer-events: none;
+  width: 48px;
+  height: 48px;/*
+  padding: 0px 75px 0px 90px;*/
+  flex-basis: content;
+
+}
+.draggable-number.dragged {
+  user-select: none;
+  opacity: 0.25;
+  cursor: default;
+}
+.draggable-number.dragged:hover {
+  opacity: 0.1;
+}

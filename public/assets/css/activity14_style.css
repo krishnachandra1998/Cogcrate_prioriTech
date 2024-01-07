@@ -1,0 +1,25 @@
+
+/* =============================== Activity 14 ===========================================*/
+
+#sortable-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#sortable-list li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  cursor: grab;
+}
+
+.ac_14_alphabet_img{
+  width: 95px;
+  height: 95px;
+}
+
+.checkOrder{
+  margin: 0px 30px;
+}

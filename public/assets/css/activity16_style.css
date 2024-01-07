@@ -1,0 +1,61 @@
+/*------------------------Activities Styling-------------------------*/
+
+/* =============================== Activity 16 ===========================================*/
+
+#activity_16_con {
+  width: 50%;
+}
+
+.ac_16_main_grid{
+  padding: 0px;
+  width: 32px;
+  height: 32px;
+}
+
+.fixed_letters{
+  text-align: center;
+  border: 0.5px solid skyblue;
+  color: skyblue;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.empty_letters{
+  text-align: center;
+  border: 0.5px solid skyblue;
+  
+}
+.hint_image{
+  text-align: center;
+}
+.hint_image > img {
+  width: 40px;
+  height: 40px;
+}
+
+.character{
+  padding: 1px;
+  text-align: center;
+
+}
+.tac_mc_i_s{
+  width: 32px;
+  height: 32px;
+}
+
+.droppable{
+  width: 30px;
+  height: 30px;
+}
+
+.droppable.dropped img {
+  width: 28px;
+  height: 28px;
+
+}
+
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.4;
+  cursor: default;
+}

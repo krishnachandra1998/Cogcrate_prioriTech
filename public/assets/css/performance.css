@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.container{
+	background-color: transparent;
+	font-weight: bold;
+	font-family:'Times New Roman', Times, serif;
+}
+
+.canvasjs-chart-credit
+{
+    display: none !important;
+}
+
+h1{
+	color:#fff;
+}
+
+h2{
+	font-weight: bold;
+}
+h6{
+	color:#fff;
+	font-weight: bold;
+}
+.row{
+	padding: 2px;
+	margin-top: 5px;
+}
+.col-4,.col-8{
+	background-color:#C77398;
+	padding: 5px;
+	border:2px solid #fff;
+}
+.col{
+	background-color:#C77398;
+	padding: 5px;
+	border:2px solid #fff;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.barWrapper{
+	text-indent: -80%;
+}
+
+.progressText{
+	font-size: 20px;
+}
+.progress{
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 5px 15px 10px 15px;
+	height: 20px;
+	width: 90%;
+}
+
+.progress-bar {
+      background:rgb(23,44,60);
+   	box-shadow: 0 3px 3px -5px #172C41, 0 2px 5px #172C41;
+      border-radius: 20px; 
+  	-webkit-transition: width 1.5s ease-in-out;
+  	transition: width 1.5s ease-in-out;
+  	text-indent: initial;
+  	font-size: 15px;
+  	font-weight: 100;
+}
+
+#memoryInventoryActivityProgress .progress-bar, #numericalActivityProgress .progress-bar, #creativityActivityProgress .progress-bar, #motorActivityProgress .progress-bar, #workbookActivityProgress .progress-bar{
+	background: linear-gradient(to left, #F2709C, #FF9472);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+
+
+}
+
+#memoryInventoryActivityProgress, #numericalActivityProgress, #creativityActivityProgress, #motorActivityProgress, #workbookActivityProgress{
+	background-color: #fff;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.label {
+      cursor: pointer;
+      color: #3366cc;
+      text-decoration: underline;
+      margin-right: 10px;
+}
+
+.empty_data_col{
+	background-color:#C77398;
+	color: #fff;
+	text-align: center;
+	font-size: larger;
+}
+
+.user-details{
+	text-align: -webkit-center;
+}
+
+.table{
+	overflow-x:auto;
+}
+
+#performance_data_table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#performance_data_table td, #performance_data_table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+  
+  #performance_data_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #performance_data_table tr:hover {background-color: #ddd;}
+  
+  #performance_data_table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+  }
+
+.circularCard{
+	border-radius: 50%;
+	border:1px solid #C77398;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	height: 200px;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.circularCard h5{
+	font-size: 15px;
+}

@@ -1,0 +1,70 @@
+
+/* =============================== Activity 13 ===========================================*/
+
+#activity_13_con {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin-positions {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-spinBtn {
+  min-height: 225px;
+  max-width: 225px;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 5s ease-in-out;
+  background-color: #c5acf2;
+
+}
+
+.position-spinBtn img{
+  width: 100px;
+  height: 100px;
+}
+
+.wheel-position{
+  position: absolute;
+  height: 100%;
+  background-color: #a784e8;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0px;
+}
+
+.position{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: bottom right;
+  transform: rotate(calc(45deg * var(--i)));
+  clip-path: polygon(0 0, 56% 0, 100% 100%, 0 56%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.position span{
+  transform: rotate(var(--transform));
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+}
+
+.position span::after{
+  position: absolute;
+}

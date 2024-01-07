@@ -1,0 +1,66 @@
+
+/* ================================= Activity 4 ==========================================*/
+
+#activity_4_con{
+  background-color: #FFC0CB;
+  width: 45%;
+}
+
+.matching-alphabets{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.matching-alphabet{
+  height: 95px;
+  margin: 5px;
+  background-color: #f547af;
+  cursor: pointer;
+  text-align-last: center;
+}
+
+.matching-alphabet span{
+    visibility: hidden;
+}
+
+.matching-alphabet img {
+  height: 95px;
+  width: 95px;
+}
+
+.matching-alphabet .flipped {
+    pointer-events: none;
+    background-color: #fff;
+    text-align-last: center;
+}
+
+.matching-alphabet .flipped span {
+  display: none;
+}
+
+.matching-alphabet .flipped img {
+  pointer-events: none;
+  height: 95px;
+  width: 95px;
+  padding-top: 10px;
+
+}
+
+.matching-alphabets span::before{
+    visibility: hidden;
+}
+.matching-alphabets span:hover  ::after{
+    visibility: visible;
+}
+
+@media (max-width: 600px) {
+  html { 
+    font-size: 14px;
+  }
+
+  #activity_4_con{
+    width: auto;
+  }  
+  
+}
+

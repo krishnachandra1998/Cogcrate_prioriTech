@@ -1,0 +1,66 @@
+
+/*----------------------Activity 6 ----------------------------------*/
+
+#activity_6_con{
+    width: 40%;
+}
+
+.draggable-shape{
+  text-align-last: center;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+.draggable-shape:hover {
+  opacity: 0.5;
+}
+
+.targets{
+  width: 250px;
+  height: 430px;
+  background-image: url('http://localhost/Cogcrate_Prioritech/public/assets/img/activity_6_img/Background_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.target{
+  padding: 0px;
+}
+
+.target.targeted svg > polygon{
+  fill: green;
+}
+
+.target.targeted svg > circle{
+  fill: deeppink;
+}
+
+.target.targeted svg > rect{
+  fill: skyblue;
+}
+
+#star.targeted svg > polygon{
+  fill: yellow;
+}
+
+
+
+/* Drag and Drop Related Styling */
+.droppable-shape.droppable-hover {
+  border-width: 2.5px;
+  transform: scale(1.1);
+}
+.droppable-shape.dropped {
+  color: #fff;
+  margin: 0px 40px;
+  padding-bottom: 0px;
+}
+
+.droppable-shape.dropped svg {
+  pointer-events: none;
+  width: 53px;
+  height: 60px;
+  padding: 0px 75px 0px 90px;
+  flex-basis: content;
+
+}

@@ -1,0 +1,134 @@
+/*---------------------- Activity 1  ----------------------------------*/
+
+.draggable-elements {
+  margin: 1px;
+}
+.draggable {
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+
+#test_a1_i1, #test_a1_i3, #test_a1_i5, #test_a1_i7{
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+#test_a1_i2, #test_a1_i4, #test_a1_i6, #test_a1_i8{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.droppable-elements{
+  text-align-last: center;
+}
+
+.droppable {
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.droppable span {
+  pointer-events: none;
+}
+
+.droppable img {
+   height: 50px;
+   width: 50px;
+}
+
+
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  border-width: 2.5px;
+  transform: scale(1.1);
+}
+.droppable.dropped {
+  color: #fff;
+  margin: 0px 40px;
+  padding-bottom: 0px;
+}
+
+.droppable.dropped span {
+  display: none;
+}
+
+.droppable.dropped img {
+  pointer-events: none;
+  width: 53px;
+  height: 60px;
+  padding: 0px 75px 0px 90px;
+  flex-basis: content;
+
+}
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+.score{
+  text-align-last: center;
+  display: inline;
+}
+
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+
+ #test_a1_i1, #test_a1_i3, #test_a1_i5, #test_a1_i7{
+  width: 45px;
+  height: 45px;
+  float: right;
+}
+
+#test_a1_i2, #test_a1_i4, #test_a1_i6, #test_a1_i8{
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.droppable {
+  padding-bottom: 10px;
+}
+
+.droppable img {
+  width: 30px;
+  height: 30px;
+}
+ 
+}
+
+
+
+@media (max-width: 300px) {
+  html { font-size: 12px; }
+
+  #test_a1_i1, #test_a1_i3, #test_a1_i5, #test_a1_i7{
+    width: 40px;
+    height: 40px;
+    float: right;
+  }
+  
+  #test_a1_i2, #test_a1_i4, #test_a1_i6, #test_a1_i8{
+    width: 40px;
+    height: 40px;
+    float: left;
+  }
+  
+  .droppable img{
+    width: 28px;
+    height: 28px;
+  }
+  
+}
